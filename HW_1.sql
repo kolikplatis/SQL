@@ -9,11 +9,11 @@ create table employees(
 --Создать таблицу salary
 --- id. Serial  primary key,
 --- monthly_salary. Int, not null
-
 create table salary(
 	id serial primary key,
 	monthly_salary int not null
 );
+
 --Наполнить таблицу employee 70 строками.
 insert into employees(employee_name)
 values  ('James'),
@@ -236,6 +236,10 @@ values  ('Junior Python developer'),
 		('Middle Automation QA engineer'),
 		('Senior Automation QA engineer');
 	
+-- Создать таблицу roles_employee
+-- - id. Serial  primary key,
+-- - employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+-- - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 create table roles_employee(
 	id serial primary key,
 	employee_id int not null unique,
