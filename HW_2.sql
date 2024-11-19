@@ -112,10 +112,10 @@ SELECT MAX(id) FROM Table;
 SELECT COUNT(id) FROM Table;
 
  31. Вывести id пользователя, имя, дату создания пользователя. Отсортировать по порядку возрастания даты добавления пользователя
-SELECT id, name, created_on from Table
+SELECT id, name, created_on FROM Table
 ORDER BY created_on;
 
  32. Вывести id пользователя, имя, дату создания пользователя. Отсортировать по порядку убывания даты добавления пользователя
-SELECT id, name, created_on from Table
+SELECT id, name, created_on FROM Table
 ORDER BY created_on DESC;
 
